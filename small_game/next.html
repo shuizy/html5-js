@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+ 	<head> 
+ 		<meta charset="utf-8"> 
+ 		<title>合体啦~>o<~</title> 
+		<link href="style.css" rel="stylesheet">
+ 	</head> 
+	<style>
+	#mycan{
+	position: absolute;
+    left: 19%;
+    top: 18%;
+	}
+	#ooo{
+	position: absolute;
+    left: 34%;
+    top: 3%
+	}
+	#score{
+	position: absolute;
+    left: 45%;
+    top: 11%;
+	font-family:幼圆;
+	font-size:40px;
+	color:rgb(99,99,0)
+	}
+	#re{
+	border-right:   blue   4px   solid; 
+	border-top:   blue   4px   solid; 
+	background-image:   url(/Images/back.gif); 
+	vertical-align:   middle; 
+	border-left:   blue   4px   solid; 
+	border-bottom:   blue   4px   solid; 
+	text-align:   center; 
+	position: absolute;
+    left: 55%;
+    top: 19%;
+	font-family:幼圆;
+	font-size:50px;
+	color:rgb(99,99,0)
+	}
+	</style>
+ 	<body background="background.jpg">
+	<div id="ooo"></div>
+	<div id="mycan">
+			<div id="d11" onmouseover="lighton('1','1')"  onmouseout="lightoff()" onclick="on('1','1')" ></div>
+			<div id="d12" onmouseover="lighton('1','2')"  onmouseout="lightoff()" onclick="on('1','2')" ></div>
+			<div id="d13" onmouseover="lighton('1','3')"  onmouseout="lightoff()"  onclick="on('1','3')"></div>
+			<div id="d14" onmouseover="lighton('1','4')"  onmouseout="lightoff()"  onclick="on('1','4')"></div>
+			<div id="d15" onmouseover="lighton('1','5')"  onmouseout="lightoff()"  onclick="on('1','5')"></div>
+			<div id="d16" onmouseover="lighton('1','6')"  onmouseout="lightoff()"  onclick="on('1','6')"></div>
+			<div id="d21" onmouseover="lighton('2','1')"  onmouseout="lightoff()"  onclick="on('2','1')"></div>
+			<div id="d22" onmouseover="lighton('2','2')"  onmouseout="lightoff()"  onclick="on('2','2')"></div>
+			<div id="d23" onmouseover="lighton('2','3')"  onmouseout="lightoff()"  onclick="on('2','3')"></div>
+			<div id="d24" onmouseover="lighton('2','4')"  onmouseout="lightoff()"  onclick="on('2','4')"></div>
+			<div id="d25" onmouseover="lighton('2','5')"  onmouseout="lightoff()"  onclick="on('2','5')" ></div>
+			<div id="d26" onmouseover="lighton('2','6')"  onmouseout="lightoff()"  onclick="on('2','6')"></div>
+			<div id="d31" onmouseover="lighton('3','1')"  onmouseout="lightoff()"  onclick="on('3','1')"></div>
+			<div id="d32" onmouseover="lighton('3','2')"  onmouseout="lightoff()"  onclick="on('3','2')"></div>
+			<div id="d33" onmouseover="lighton('3','3')"  onmouseout="lightoff()"  onclick="on('3','3')"></div>
+			<div id="d34" onmouseover="lighton('3','4')"  onmouseout="lightoff()"  onclick="on('3','4')"></div>
+			<div id="d35" onmouseover="lighton('3','5')"  onmouseout="lightoff()"  onclick="on('3','5')"></div>
+			<div id="d36" onmouseover="lighton('3','6')"  onmouseout="lightoff()"  onclick="on('3','6')"></div>
+			<div id="d41" onmouseover="lighton('4','1')"  onmouseout="lightoff()"  onclick="on('4','1')"></div>
+			<div id="d42" onmouseover="lighton('4','2')"  onmouseout="lightoff()"  onclick="on('4','2')"></div>
+			<div id="d43" onmouseover="lighton('4','3')"  onmouseout="lightoff()"  onclick="on('4','3')"></div>
+			<div id="d44" onmouseover="lighton('4','4')"  onmouseout="lightoff()"  onclick="on('4','4')"></div>
+			<div id="d45" onmouseover="lighton('4','5')"  onmouseout="lightoff()"  onclick="on('4','5')"></div>
+			<div id="d46" onmouseover="lighton('4','6')"  onmouseout="lightoff()"  onclick="on('4','6')"></div>
+			<div id="d51" onmouseover="lighton('5','1')"  onmouseout="lightoff()"  onclick="on('5','1')"></div>
+			<div id="d52" onmouseover="lighton('5','2')"  onmouseout="lightoff()"  onclick="on('5','2')"></div>
+			<div id="d53" onmouseover="lighton('5','3')"  onmouseout="lightoff()"  onclick="on('5','3')"></div>
+			<div id="d54" onmouseover="lighton('5','4')"  onmouseout="lightoff()"  onclick="on('5','4')"></div>
+			<div id="d55" onmouseover="lighton('5','5')"  onmouseout="lightoff()"  onclick="on('5','5')"></div>
+			<div id="d56" onmouseover="lighton('5','6')"  onmouseout="lightoff()"  onclick="on('5','6')"></div>
+			<div id="d61" onmouseover="lighton('6','1')"  onmouseout="lightoff()"  onclick="on('6','1')"></div>
+			<div id="d62" onmouseover="lighton('6','2')"  onmouseout="lightoff()"  onclick="on('6','2')"></div>
+			<div id="d63" onmouseover="lighton('6','3')"  onmouseout="lightoff()"  onclick="on('6','3')"></div>
+			<div id="d64" onmouseover="lighton('6','4')"  onmouseout="lightoff()"  onclick="on('6','4')"></div>
+			<div id="d65" onmouseover="lighton('6','5')"  onmouseout="lightoff()"  onclick="on('6','5')"></div>
+			<div id="d66" onmouseover="lighton('6','6')"  onmouseout="lightoff()"  onclick="on('6','6')"></div>
+	</div>
+	<div id="score">得分:</div>
+	<button id="re" onclick="location.reload();"></button>
+	<audio src="bgm.mp3" autoplay="autoplay" loop="loop" controls="control"></audio>
+ 	<script type="text/javascript" src="myjs.js"></script> 
+</html> 
+ 

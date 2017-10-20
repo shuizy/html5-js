@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html> 
+ 	<head> 
+ 		<meta charset="utf-8"> 
+ 		<title>合体啦~>o<~</title> 
+ 	</head> 
+	<style>
+	#qiu{
+	position: absolute;
+    left: 25%;
+    top: 4%;
+	}
+	#he{
+	position: absolute;
+    left: 40%;
+    top: 6%;
+	}
+	#ti{
+	position: absolute;
+    left: 55%;
+    top: 4%;
+	}
+	#word{
+	position: absolute;
+    left: 25%;
+    top: 30%;
+	font-family:幼圆;
+	font-size:25px;
+	font-weight:700;
+	color:rgb(99,99,99)
+	}
+	span.bei{
+	background-color:yellow
+	}
+	#tishi
+	{
+	position: absolute;
+    left: 2%;
+    top: 60%;
+	}
+	#qqiao
+	{
+	position: absolute;
+    left: 11%;
+    top: 40%;
+	}
+	#start
+	{
+	position: absolute;
+    left: 74%;
+    top: 2%;
+	}
+	</style>
+	<script>
+	setTimeout(function(){
+		document.getElementById("qiu").style.display="";
+		setTimeout(function(){
+			document.getElementById("he").style.display="";
+			setTimeout(function(){
+				document.getElementById("ti").style.display="";
+				setTimeout(function(){
+				
+				},400);
+			},400);
+		},400);
+	},400);
+	function tan()
+	{
+		document.getElementById("qiao").style.display="";
+	}
+	function suo()
+	{
+		document.getElementById("qiao").style.display="none";
+	}
+	function start()
+	{
+	}
+	</script>
+	<body background="background.jpg">
+	<img id="qiu" src="求.jpg" style="display:none" />
+	<img id="he" src="合.jpg" style="display:none" />
+	<img id="ti" src="体.jpg" style="display:none" />
+	<div id="word"><span class="bei">
+	游戏规则：<br/>
+	求合体是要玩家填满所有空缺才能过关。<br/>
+	另外游戏中三个相同的物品一旦相邻连接(包括横、竖和折，但是不包括斜向)<br/>
+	就可以合体成为更高级的物品，合成的物品越好则玩家得到的分数越高。<br/>
+	求合体物品合成规则：<br/></span>
+	<img id="guize" src="guize.jpg"  />
+	</div>
+	<div id="tishi" onmouseover="tan()" onmouseout="suo()">
+	<img src="mao.jpg"  height="160" width="175"/>
+	</div>
+	<div id="qqiao"><img id="qiao" src="qiao.jpg" style="display:none" height="175" width="200"/></div>
+	<a href="next.html"><img id="start" src="begin.jpg" height="240" width="240"/></a>
+	</body>	
+</html> 	  
